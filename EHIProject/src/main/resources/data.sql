@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS Contact;
+ 
+CREATE TABLE Contact (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL,
+  email_id VARCHAR(250) NOT NULL,
+  phone_no INT NOT NULL,
+  status VARCHAR(25) NOT NULL
+);
