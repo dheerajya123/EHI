@@ -1,8 +1,8 @@
 # EHI
 
-# clone the current project in local directory
+# Clone the current project in local directory
 
-# EHI folder
+# Open on EHI folder
 
 # Run ./build.sh
 
