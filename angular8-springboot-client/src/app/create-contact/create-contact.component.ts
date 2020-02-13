@@ -35,6 +35,7 @@ export class CreateContactComponent implements OnInit {
         data => {
           console.log(data)
           this.contact = new Contact();
+          this.contacts = this.contactService.getContactsList();
         }, error => console.log(error));
       this.updateTable();
   }

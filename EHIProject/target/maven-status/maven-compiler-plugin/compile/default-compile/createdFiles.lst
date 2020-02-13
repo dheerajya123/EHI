@@ -1,0 +1,9 @@
+com\ehi\EHIProject\Model\Contact.class
+com\ehi\EHIProject\EhiProjectApplication.class
+com\ehi\EHIProject\DAO\ContactDAO.class
+com\ehi\EHIProject\ContactNotFound.class
+com\ehi\EHIProject\ContactErrorResponse.class
+com\ehi\EHIProject\Controller\ContactService.class
+com\ehi\EHIProject\Controller\ContactController.class
+com\ehi\EHIProject\Controller\ErrorController.class
+com\ehi\EHIProject\GlobalException.class

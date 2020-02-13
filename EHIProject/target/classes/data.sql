@@ -5,6 +5,6 @@ CREATE TABLE Contact (
   first_name VARCHAR(250) NOT NULL,
   last_name VARCHAR(250) NOT NULL,
   email_id VARCHAR(250) NOT NULL,
-  phone_no INT NOT NULL,
+  phone_no BIGINT NOT NULL,
   status VARCHAR(25) NOT NULL
 );
