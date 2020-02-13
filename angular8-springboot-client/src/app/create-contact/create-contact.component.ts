@@ -40,16 +40,8 @@ export class CreateContactComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log("submit");
-    if(this.contact.firstName!=""&&this.contact.lastName!=""&&this.contact.emailId!=""&&this.contact.phoneNumber.toString()!=""&&this.contact.status!="")
-    {
+    this.submitted = true;
     this.save();
-    console.log("data");
-    }
-    else
-    {
-      console.log("please enter all the details");
-    }
   }
 
   updateTable()
@@ -67,12 +59,18 @@ export class CreateContactComponent implements OnInit {
         error => console.log(error));
   }
 
+
   updateContact(contact: Contact){
     this.contact = contact;
     //this.router.navigate(['update', contact]);
   }
 
-  onlyNumberKey(event) {
-    return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57;
-}
+  numberOnly(event): boolean {
+    const charCode = (event.which) ? event.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
+
+  }
 }
